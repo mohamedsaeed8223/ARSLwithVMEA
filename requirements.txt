@@ -1,0 +1,11 @@
+flask
+opencv-python
+imutils 
+numpy
+torch
+torchvision
+pytorchvideo
+transformers
+mediapipe
+av
+decord
