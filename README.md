@@ -18,7 +18,7 @@ to use this repo make sure to install all the dependecies in requirements.txt fi
 pip install -r requirements.txt
 ```
 # Model Architecture
-![model](https://github.com/mohamedsaeed8223/ARSLwithVMEA/blob/main/videomae_architecture.jpeg?raw=true)
+![model](https://https://github.com/mohamedsaeed8223/ARSLwithVMEA/blob/main/images/videomae_architecture.jpeg?raw=true)
 The model works using 2 attention methods:  
 vanilla VIT (vision transformer) -> to understand each frame  
 joint time-space attention ->to understand relations between frames  
