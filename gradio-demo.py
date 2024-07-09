@@ -27,7 +27,12 @@ def classify_video(video_path):
     top_label_confidence = [result[0]['score'], result[1]['score'], result[2]['score']]
     return dict(zip(top_label, top_label_confidence))
 
-demo = gr.Interface(fn=classify_video, inputs=gr.Video(sources=["upload"]), outputs=gr.Label(num_top_classes=3))
+title = "Arabic Sign Language Recognition using VideoMAE"
+
+examples = ["examples/alhamdulellah.mp4",
+            "examples/forsa sa3eda.mp4",
+            "examples/ma3a el salama.mp4",]
+demo = gr.Interface(fn=classify_video,title=title, inputs=gr.Video(), outputs=gr.Label(num_top_classes=3), examples=examples)
 
 if __name__ == "__main__":
     demo.launch()
